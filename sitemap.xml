@@ -3,57 +3,57 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.paremodelacoes.pt/</loc>
+    <loc>https://www.probuildalliance.pt/</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.paremodelacoes.pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.probuildalliance.pt/"/>
     <image:image>
-      <image:loc>https://www.paremodelacoes.pt/images/deckpiscinalindo.webp</image:loc>
+      <image:loc>https://www.probuildalliance.pt/images/deckpiscinalindo.webp</image:loc>
       <image:caption>Deck e piscina premium executados pela PA REMODELAÇÕES</image:caption>
       <image:title>Deck e Piscina com Murais</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://www.paremodelacoes.pt/images/casadebanholinda.webp</image:loc>
+      <image:loc>https://www.probuildalliance.pt/images/casadebanholinda.webp</image:loc>
       <image:caption>Remodelação premium de casa de banho em Lisboa</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.paremodelacoes.pt/images/salajanela.webp</image:loc>
+      <image:loc>https://www.probuildalliance.pt/images/salajanela.webp</image:loc>
       <image:caption>Sala remodelada com vista para o rio Tejo</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://www.paremodelacoes.pt/blog/</loc>
+    <loc>https://www.probuildalliance.pt/blog/</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.paremodelacoes.pt/blog/quanto-custa-remodelar-casa-de-banho-portugal-2026/</loc>
+    <loc>https://www.probuildalliance.pt/blog/quanto-custa-remodelar-casa-de-banho-portugal-2026/</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.paremodelacoes.pt/blog/deck-piscina-madeira-vs-composito/</loc>
+    <loc>https://www.probuildalliance.pt/blog/deck-piscina-madeira-vs-composito/</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.paremodelacoes.pt/blog/pavimento-flutuante-precos-portugal/</loc>
+    <loc>https://www.probuildalliance.pt/blog/pavimento-flutuante-precos-portugal/</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.paremodelacoes.pt/blog/cores-pintura-interior-2026/</loc>
+    <loc>https://www.probuildalliance.pt/blog/cores-pintura-interior-2026/</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.paremodelacoes.pt/blog/remodelar-antes-de-vender-casa/</loc>
+    <loc>https://www.probuildalliance.pt/blog/remodelar-antes-de-vender-casa/</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /asd.txt
 
-Sitemap: https://www.paremodelacoes.pt/sitemap.xml
+Sitemap: https://www.probuildalliance.pt/sitemap.xml
