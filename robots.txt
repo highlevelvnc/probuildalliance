@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /asd.txt
+
+Sitemap: https://www.probuildalliance.pt/sitemap.xml
