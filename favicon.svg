@@ -1,8 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="8" fill="#060606"/>
-  <rect x="4" y="4" width="56" height="56" rx="5" fill="#C9A24A"/>
-  <path d="M12 48V30L32 14L52 30V48" stroke="#060606" stroke-width="3" stroke-linejoin="round" fill="none"/>
-  <path d="M27 48V39H37V48" stroke="#060606" stroke-width="2.6" stroke-linejoin="round" fill="none"/>
-  <path d="M12 48H52" stroke="#060606" stroke-width="2.6" stroke-linecap="round"/>
-  <circle cx="32" cy="29" r="2.2" fill="rgba(0,0,0,0.55)"/>
+  <rect width="64" height="64" rx="8" fill="#fff"/>
+  <g transform="translate(8 12)">
+    <rect x="0" y="14" width="3" height="26" fill="#0d0d0d"/>
+    <rect x="5" y="6" width="3" height="34" fill="#0d0d0d"/>
+    <rect x="10" y="10" width="3" height="30" fill="#D32F2F"/>
+    <path d="M14 14 L22 6 L30 14 L30 18 L22 12 L14 18 Z" fill="#D32F2F"/>
+    <path d="M16 16 L28 16 L28 12 L22 8 L16 12 Z" fill="#1565C0"/>
+    <text x="14" y="38" font-family="Arial Black, sans-serif" font-weight="900" font-size="22" fill="#0d0d0d">PA</text>
+  </g>
 </svg>

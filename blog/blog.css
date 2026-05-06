@@ -7,6 +7,10 @@ a:hover{color:var(--w)}
 img{max-width:100%;height:auto;display:block}
 
 /* NAV */
+.nav-logo-img{height:42px;width:auto;display:block;filter:brightness(0) invert(1) drop-shadow(0 1px 8px rgba(201,162,74,.18));transition:filter .35s ease,transform .35s ease}
+.nav-brand:hover .nav-logo-img{transform:translateY(-1px)}
+.ft-logo-link{display:inline-block;margin-bottom:14px}
+.ft-logo-img{height:48px;width:auto;display:block;filter:brightness(0) invert(1) drop-shadow(0 2px 10px rgba(201,162,74,.18))}
 nav{position:fixed;top:18px;left:50%;transform:translateX(-50%);z-index:1000;width:min(1280px,calc(100% - 48px));height:72px;display:flex;align-items:center;padding:0 28px;border:1px solid rgba(255,255,255,.08);background:rgba(8,8,8,.78);backdrop-filter:blur(18px) saturate(150%);box-shadow:0 18px 45px rgba(0,0,0,.3);transition:background .3s ease,border-color .3s ease}
 nav.up{background:rgba(8,8,8,.94);border-color:rgba(201,162,74,.18)}
 .nav-inner{width:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
