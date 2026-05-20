@@ -45,9 +45,23 @@ const config: Config = {
         wider: "0.08em",
         widest: "0.22em",
       },
+      borderRadius: {
+        "2xs": "3px",
+        xs: "5px",
+      },
+      boxShadow: {
+        "glow-red": "0 30px 80px -30px rgba(199,18,31,0.55), 0 8px 30px -10px rgba(199,18,31,0.25)",
+        "glow-royal": "0 30px 80px -30px rgba(29,78,203,0.5), 0 8px 30px -10px rgba(29,78,203,0.22)",
+        "card": "0 32px 80px -36px rgba(0,0,0,0.7), 0 4px 16px -6px rgba(0,0,0,0.4)",
+        "lift": "0 50px 110px -40px rgba(0,0,0,0.8), 0 10px 28px -8px rgba(199,18,31,0.18)",
+      },
       animation: {
         "fade-up": "fadeUp 0.9s cubic-bezier(0.16,1,0.3,1) forwards",
         "draw": "draw 2.2s cubic-bezier(0.65,0,0.35,1) forwards",
+        "marquee": "marquee 36s linear infinite",
+        "marquee-rev": "marquee 42s linear infinite reverse",
+        "float-slow": "floatSlow 9s ease-in-out infinite",
+        "pulse-glow": "pulseGlow 4s ease-in-out infinite",
       },
       keyframes: {
         fadeUp: {
@@ -56,6 +70,18 @@ const config: Config = {
         },
         draw: {
           to: { strokeDashoffset: "0" },
+        },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-50%)" },
+        },
+        floatSlow: {
+          "0%,100%": { transform: "translateY(0) rotate(0)" },
+          "50%": { transform: "translateY(-12px) rotate(0.5deg)" },
+        },
+        pulseGlow: {
+          "0%,100%": { opacity: "0.45" },
+          "50%": { opacity: "0.85" },
         },
       },
     },
