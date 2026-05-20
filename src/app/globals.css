@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  overflow-x: clip;
+}
+
+body {
+  background: theme('colors.ink.DEFAULT');
+  color: theme('colors.cream');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection */
+::selection {
+  background: theme('colors.brand.red');
+  color: #fff;
+}
+
+/* Scroll-reveal: visible by default, hidden only when JS marks them */
+[data-revealed="false"] {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+}
+[data-revealed="false"][data-reveal="left"]  { transform: translate3d(-40px, 0, 0); }
+[data-revealed="false"][data-reveal="right"] { transform: translate3d(40px, 0, 0); }
+[data-revealed="false"][data-reveal="scale"] { transform: scale(0.96); }
+[data-reveal] {
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-revealed="false"] { opacity: 1; transform: none; }
+  [data-reveal] { transition: none; }
+}
+
+/* Reusable atoms */
+@layer components {
+  .eyebrow {
+    @apply font-body text-eyebrow uppercase font-semibold text-brand-red;
+  }
+  .eyebrow-line {
+    @apply inline-flex items-center gap-3;
+  }
+  .eyebrow-line::before {
+    content: '';
+    width: 28px;
+    height: 1px;
+    background: currentColor;
+  }
+  .display-line {
+    @apply font-display font-black tracking-tight;
+  }
+  .container-x {
+    @apply max-w-container mx-auto px-5 sm:px-8 lg:px-12;
+  }
+  .section-y {
+    @apply py-20 sm:py-28 lg:py-36;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-3 bg-brand-red text-white px-7 py-4
+      text-[12px] font-semibold uppercase tracking-[0.22em] transition-all duration-300
+      hover:bg-brand-red-bright hover:-translate-y-0.5 hover:shadow-[0_18px_44px_-12px_rgba(199,18,31,0.55)];
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-3 border border-cream/25 text-cream px-7 py-4
+      text-[12px] font-semibold uppercase tracking-[0.22em] transition-all duration-300
+      hover:bg-cream hover:text-ink hover:-translate-y-0.5;
+  }
+  .underline-accent {
+    background-image: linear-gradient(theme('colors.brand.red'), theme('colors.brand.red'));
+    background-size: 0% 1.5px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .underline-accent:hover {
+    background-size: 100% 1.5px;
+  }
+}
+
+/* Grid noise / blueprint background helper */
+.bg-blueprint {
+  background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+.bg-blueprint-fade {
+  mask-image: radial-gradient(ellipse at center, #000 0%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 0%, transparent 75%);
+}

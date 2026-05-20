@@ -1,12 +1,29 @@
-.DS_Store
-.claude/
+# Next.js
+/.next/
+/out/
+/build/
+next-env.d.ts
+
+# Dependencies
+/node_modules/
+
+# Logs / OS
 *.log
-*.bak
-node_modules/
+.DS_Store
+
+# Editor / tooling
 .vscode/
 .idea/
-images/asd.txt
+.claude/
+
+# Project-specific
 /IDNOVA/
 paremodelacoes.OLD.png.bak
+
+# Env
 .env
 .env.local
+.env*.local
+
+# Backups
+*.bak

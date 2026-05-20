@@ -1,0 +1,126 @@
+import { WHATSAPP_URL, COMPANY } from "@/lib/constants";
+import { IconWhatsApp, IconPhone, IconMail, IconPin } from "./Icons";
+
+export function Contact() {
+  return (
+    <section id="contact" className="section-y bg-ink relative overflow-hidden border-t border-ink-border">
+      <div className="absolute inset-0 bg-blueprint bg-blueprint-fade opacity-40 pointer-events-none" />
+
+      <div className="container-x relative grid lg:grid-cols-[1.1fr_1fr] gap-12 lg:gap-16 items-start">
+        <div data-reveal="left">
+          <span className="eyebrow eyebrow-line">Contacto</span>
+          <h2 className="font-display font-black text-display-xl text-cream mt-4 leading-[0.95]">
+            Próximo projeto,<br />
+            <span className="text-brand-red">próxima obra séria.</span>
+          </h2>
+          <p className="text-cream/70 text-base sm:text-lg leading-relaxed mt-6 max-w-prose">
+            Conte-nos sobre a sua ideia. Respondemos em minutos por WhatsApp ou telefone,
+            e marcamos visita técnica em 48h.
+          </p>
+
+          <div className="mt-10 flex flex-col gap-4">
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener"
+              className="group flex items-center gap-4 border border-ink-border bg-ink-panel p-5 hover:border-brand-red transition-colors"
+            >
+              <span className="w-12 h-12 grid place-items-center bg-brand-red text-white">
+                <IconWhatsApp className="h-5 w-5" />
+              </span>
+              <div className="flex flex-col">
+                <span className="text-[10px] uppercase tracking-[0.3em] text-mist">WhatsApp</span>
+                <span className="font-display font-extrabold text-lg text-cream">Resposta imediata</span>
+              </div>
+            </a>
+            <a
+              href={`tel:${COMPANY.phoneRaw}`}
+              className="group flex items-center gap-4 border border-ink-border bg-ink-panel p-5 hover:border-brand-royal transition-colors"
+            >
+              <span className="w-12 h-12 grid place-items-center bg-brand-royal text-white">
+                <IconPhone className="h-5 w-5" />
+              </span>
+              <div className="flex flex-col">
+                <span className="text-[10px] uppercase tracking-[0.3em] text-mist">Telefone</span>
+                <span className="font-display font-extrabold text-lg text-cream">{COMPANY.phone}</span>
+              </div>
+            </a>
+            <div className="flex items-center gap-4 border border-ink-border bg-ink-panel p-5">
+              <span className="w-12 h-12 grid place-items-center border border-ink-border text-cream">
+                <IconPin className="h-5 w-5" />
+              </span>
+              <div className="flex flex-col">
+                <span className="text-[10px] uppercase tracking-[0.3em] text-mist">Atendimento</span>
+                <span className="font-display font-extrabold text-lg text-cream">{COMPANY.region}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form
+          data-reveal="right"
+          action={`mailto:${COMPANY.email}`}
+          method="post"
+          encType="text/plain"
+          className="bg-ink-panel border border-ink-border p-7 sm:p-10"
+        >
+          <div className="text-[10px] uppercase tracking-[0.32em] text-brand-red mb-2">
+            Orçamento grátis · 24h
+          </div>
+          <div className="font-display font-extrabold text-2xl text-cream mb-8">
+            Deixe os dados.<br />Voltamos em minutos.
+          </div>
+
+          <div className="flex flex-col gap-5">
+            <Field name="Nome" type="text" required />
+            <Field name="Telefone" type="tel" required />
+            <Field name="Email" type="email" />
+            <Field name="Tipo de obra" type="text" placeholder="Pintura, drywall, deck, casa de banho…" />
+            <div>
+              <label className="text-[10px] uppercase tracking-[0.3em] text-mist">Descrição</label>
+              <textarea
+                name="Descrição"
+                rows={4}
+                className="mt-2 w-full bg-ink-deep border border-ink-border text-cream px-4 py-3 outline-none focus:border-brand-red transition-colors resize-none"
+              />
+            </div>
+
+            <button type="submit" className="btn-primary mt-3 w-full">
+              <IconMail className="h-4 w-4" /> Pedir orçamento
+            </button>
+            <p className="text-[10px] uppercase tracking-[0.24em] text-mist-dim mt-1 text-center">
+              Resposta em minutos · Garantia escrita
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+  );
+}
+
+function Field({
+  name,
+  type,
+  required,
+  placeholder,
+}: {
+  name: string;
+  type: string;
+  required?: boolean;
+  placeholder?: string;
+}) {
+  return (
+    <div>
+      <label className="text-[10px] uppercase tracking-[0.3em] text-mist">
+        {name} {required && <span className="text-brand-red">*</span>}
+      </label>
+      <input
+        type={type}
+        name={name}
+        required={required}
+        placeholder={placeholder}
+        className="mt-2 w-full bg-ink-deep border border-ink-border text-cream px-4 py-3 outline-none focus:border-brand-red transition-colors placeholder:text-mist-dim"
+      />
+    </div>
+  );
+}
