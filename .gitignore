@@ -1,7 +1,12 @@
 .DS_Store
 .claude/
 *.log
+*.bak
 node_modules/
 .vscode/
 .idea/
 images/asd.txt
+/IDNOVA/
+paremodelacoes.OLD.png.bak
+.env
+.env.local
